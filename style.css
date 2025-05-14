@@ -1,0 +1,55 @@
+/* General Styling */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body { font-family: Georgia, serif; line-height: 1.5em; margin: 0; padding: 0; }
+
+/* Header & Navigation */
+nav, footer { font-family: verdana, sans-serif; background-color: #783F27; text-align: center; padding: 10px 0; }
+nav ul { margin: 0; padding: 0; list-style-type: none; display: flex; justify-content: center; }
+nav ul li { font-size: .8em; text-transform: uppercase; letter-spacing: .2em; }
+nav ul li a { display: block; border: 1px solid; border-radius: .5em; padding: .5em 1em; margin: .5em; text-decoration: none; transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; }
+nav ul li a:link, nav ul li a:visited { color: #F9AB33; }
+nav ul li a:hover, nav ul li a:active { background-color: #F9AB33; color: #783F27; transform: scale(1.1); }
+
+/* Page Titles */
+.title { background-color: #783F27; color: #F9AB33; line-height: 4em; text-align: center; }
+
+/* Sections & Layout */
+section { background: #F6F3ED; margin: 10px; padding: 20px; border: 1px dotted maroon; width: 80%; margin: auto; text-align: center; transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; }
+article { background: #F6F3ED; margin: 10px; padding: 20px; border: 1px dotted maroon; }
+
+/* Menu Items */
+#menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 100%;}
+.dish { background: #F6F3ED; padding: 20px; border: 1px dotted maroon; flex: 1 1 300px; max-width: 400px; text-align: center; display: flex; flex-direction: column; transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; }
+.dish:hover { background-color: #F9AB33; transform: scale(1.05); }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        width: 90%;
+        flex: none;
+    }
+}
+
+/* Price */
+.price { font-weight: bold; background: #F9AB33; padding: 5px; width: 100%; text-align: center; margin-top: auto; transition: transform 0.3s ease-in-out; }
+
+/* Buttons */
+button { background-color: #783F27; color: #F9AB33; padding: 10px; border: none; cursor: pointer; transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; }
+button:hover { background-color: #F9AB33; color: #783F27; transform: scale(1.1); }
+
+/* Contact Page */
+form { display: flex; flex-direction: column; width: 50%; margin: auto; }
+label { margin-top: 10px; font-weight: bold; }
+input, textarea { padding: 10px; margin-top: 5px; width: 100%; }
+button { background-color: #783F27; color: #F9AB33; }
+button:hover { background-color: #F9AB33; color: #783F27; transform: scale(1.1); }
+.error { color: red; font-size: 0.9em; margin-top: 5px; }
+
+/* Map */
+iframe { width: 80%; height: 300px; border: 0; margin: auto; display: block; }
